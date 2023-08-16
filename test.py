@@ -17,6 +17,9 @@ if __name__ == "__main__":
     ui_frmdados = (r'.\frms\atualizardados.ui')
     ui_main = QFile(ui_file_name)
     ui_frmdados = QFile(r'.\frms\atualizardados.ui')
+    if not ui_main.open(QIODevice.ReadOnly):
+        print(f"Cannot open {ui_file_name}:{ui_main.errorString()}")
+        sys.exit(-1)
     loader = QUiLoader()
     window = loader.load(ui_main)
     dados = loader.load(ui_frmdados)
