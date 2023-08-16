@@ -1,20 +1,27 @@
 # This Python file uses the following encoding: utf-8
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from PySide6.QtCore import QFile
-from frms.ui_main import Ui_MainWindow
+from PySide6.QtCore import QFile, QIODevice
+from PySide6.QtUiTools import QUiLoader
 
 
-class principal(QMainWindow):
-    def __init__(self):
-        super(principal, self).__init__()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+
+
+def showdados():
+    dados.show()
 
 
 if __name__ == "__main__":
     app = QApplication([])
-    #ui_file = QUiLoader.load(r'.\frms\main.ui')
-    window = principal()
+    ui_file_name = (r'.\frms\main.ui')
+    ui_frmdados = (r'.\frms\atualizardados.ui')
+    ui_main = QFile(ui_file_name)
+    ui_frmdados = QFile(r'.\frms\atualizardados.ui')
+    loader = QUiLoader()
+    window = loader.load(ui_main)
+    dados = loader.load(ui_frmdados)
+    # Botões From main
+    window.actionImportar_Dados.triggered.connect(showdados)
     window.show()
     sys.exit(app.exec())
+    
