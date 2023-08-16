@@ -1,6 +1,7 @@
 {
     "files": [
         "frms/main.ui",
-        "console.py"
+        "console.py",
+        "frms/atualizardados.ui"
     ]
 }

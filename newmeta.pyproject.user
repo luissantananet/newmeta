@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 11.0.2, 2023-08-15T15:27:44. -->
+<!-- Written by QtCreator 11.0.2, 2023-08-16T11:34:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -143,11 +143,10 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">principal.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/luiss/OneDrive/Documentos/Projetos Pessoais/newmeta/principal.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/luiss/OneDrive/Documentos/Projetos Pessoais/newmeta/principal.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{86d30327-b30f-4bd1-a48b-931f583ae3f3}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\luiss\OneDrive\Documentos\Projetos Pessoais\newmeta\principal.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">console.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/luiss/OneDrive/Documentos/Projetos Pessoais/newmeta/console.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/luiss/OneDrive/Documentos/Projetos Pessoais/newmeta/console.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\luiss\OneDrive\Documentos\Projetos Pessoais\newmeta\console.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/luiss/OneDrive/Documentos/Projetos Pessoais/newmeta</value>

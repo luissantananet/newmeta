@@ -16,9 +16,8 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QLineEdit, QMainWindow, QMenu,
-    QMenuBar, QSizePolicy, QStackedWidget, QStatusBar,
-    QToolButton, QWidget)
+from PySide6.QtWidgets import (QApplication, QMainWindow, QMenu, QMenuBar,
+    QSizePolicy, QStatusBar, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -33,21 +32,6 @@ class Ui_MainWindow(object):
         self.actionHelp.setObjectName(u"actionHelp")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.stackedWidget = QStackedWidget(self.centralwidget)
-        self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidget.setGeometry(QRect(0, 0, 791, 341))
-        self.page = QWidget()
-        self.page.setObjectName(u"page")
-        self.lineEdit = QLineEdit(self.page)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(20, 10, 471, 24))
-        self.toolButton = QToolButton(self.page)
-        self.toolButton.setObjectName(u"toolButton")
-        self.toolButton.setGeometry(QRect(500, 10, 23, 23))
-        self.stackedWidget.addWidget(self.page)
-        self.page_2 = QWidget()
-        self.page_2.setObjectName(u"page_2")
-        self.stackedWidget.addWidget(self.page_2)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -77,7 +61,6 @@ class Ui_MainWindow(object):
         self.actionImportar_Dados.setText(QCoreApplication.translate("MainWindow", u"Importar Dados", None))
         self.actionConfiguracao.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00e3o", None))
         self.actionHelp.setText(QCoreApplication.translate("MainWindow", u"Help", None))
-        self.toolButton.setText(QCoreApplication.translate("MainWindow", u"...", None))
         self.menuDados.setTitle(QCoreApplication.translate("MainWindow", u"Dados", None))
         self.menuHelp.setTitle(QCoreApplication.translate("MainWindow", u"Help", None))
     # retranslateUi
