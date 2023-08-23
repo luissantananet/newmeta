@@ -23,7 +23,20 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS dasdos(
                deferencavalor decimal(10,2)
                )""")
 
-
+def atualizarMesAtual():
+    cursor = banco.cursor()
+    cursor.execute("""CREATE TABLE IF NOT EXISTS mes_atual(
+               id INTEGER PRIMARY KEY AUTOINCREMENT, 
+               dep varchar(100), 
+               cat varchar(100), 
+               subcat varchar(100),
+               compra decimal(10,2),
+               venda decimal(10,2),
+               markup decimal(5,2),
+               custo_saida decimal(10,2),
+               valormargem_lucro decimal(10,2),
+               deferencavalor decimal(10,2)
+               )""")
 
 def showdados():
     dados.show()
