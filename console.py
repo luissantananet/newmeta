@@ -17,7 +17,10 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS dasdos(
                subcat varchar(100),
                compra decimal(10,2),
                venda decimal(10,2),
-               
+               markup decimal(5,2),
+               custo_saida decimal(10,2),
+               valormargem_lucro decimal(10,2),
+               deferencavalor decimal(10,2)
                )""")
 
 
